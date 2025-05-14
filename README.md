@@ -48,10 +48,29 @@ The design mirrors real-world systems such as virtual memory managers and CPU ca
 
 ---
 
-## 🚀 Getting Started
-
 ### Build Instructions
 
 ```bash
 gcc -o message_cache main.c cache.c message_store.c
 ./message_cache
+
+Files:
+main.c – Controls testing logic and program flow
+
+cache.c / cache.h – Implements the in-memory cache
+
+message_store.c / message_store.h – Handles file I/O and indexing
+
+Clean Up
+After each test run, delete messages.dat and index.dat to reset the environment:
+rm messages.dat index.dat
+
+Language: C
+
+Data Structures: Hash Table, Doubly Linked List
+
+File I/O: Binary files with structured offsets
+
+Memory Concepts: Paging, Cache Replacement Policies
+
+This project was developed to reinforce systems-level concepts such as virtual memory, paging, and cache replacement strategies. It's designed for hands-on learning and performance comparison between memory policies.
